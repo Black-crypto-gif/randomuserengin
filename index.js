@@ -57,7 +57,8 @@ const getData = () =>{
         <span class='plaque'>Password: ${password}</span>
     </div>
 </div>
-    `    
+    ` 
+    swal("Generated !", `${title} ${last} ${first}`, "success");
 })
 } 
 btn.addEventListener('click', getData);
