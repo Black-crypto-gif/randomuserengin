@@ -85,12 +85,35 @@ body{
     text-align: center;
     padding: 2rem;
     border-radius: 5px;
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
 }
   
-.title {
-    color: grey;
+.profile{
+    color: rgb(255, 255, 255);
     font-size: 18px;
-  }
+    text-transform: uppercase;
+    background-color: #000;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px #CE5937;
+}
+.gender{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.email{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cell{
+    border: 1px solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+    padding: 0.5re🇲🇾 ;
+}
   
 .btn-card{
     border: none;
@@ -113,10 +136,27 @@ a{
 
 .infos-card{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-between;
     flex-direction: row;
     margin: 1.5rem;
     padding: 2rem;
     border-radius: 5px;
+}
+.secondary-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.plaque{
+    background-color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    padding: 0.5rem;
 }
