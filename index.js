@@ -43,7 +43,7 @@ const getData = () =>{
         <span class='plaque'>${locname}</span>
         <span class='plaque'>City: ${city}</span>
         <span class='plaque'>State: ${state}</span>
-        <span class='plaque'>Country: ${country}</span>
+        <span class='plaque'>Country: ${country}<img src='https://countryflagsapi.com/png/${country}'/></span>
         <span class='plaque'>Zip Code: ${postcode}</span>
         <span class='plaque'>Longitude: ${longitude}</span>
         <span class='plaque'>Latitude: ${latitude}</span>
