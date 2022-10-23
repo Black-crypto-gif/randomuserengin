@@ -1,82 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./bootstrap.min.css">
-    <script src="https://kit.fontawesome.com/1c802f5b44.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./card-dynamic-color.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <script
+      src="https://kit.fontawesome.com/1c802f5b44.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Random User Generator</title>
-</head>
-<body>
-
-    <nav class="navbar navbar-expand-lg mb-8 bg-black navbar-dark p-2 ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#" id="logo-font">RANDOM USER GENERATOR</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          </div>
-          <button type="button" class="btn btn-success">Follow on Github <i class="fa fa-github" aria-hidden="true"></i></button>
-        </div>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg mb-4 bg-black navbar-dark p-2">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-font" href="#"
+          >RANDOM USER GENERATOR</a
+        >
+        <button type="button" class="btn btn-success">
+          Follow on Github <i class="fa fa-github" aria-hidden="true"></i>
+        </button>
+      </div>
     </nav>
     <main class="banner">
-        <h1 class="banner-title">
-            RANDOM USER GENERATOR
-        </h1>
-        <h5 class="banner-description">
-            A free engin to generate random user data. Like Lorem Ipsum, but for people.
-        </h5>
-        <button id="btn" class="generate-btn">
-           👨 GENERATE 🙎 
-        </button>
+      <h1 class="banner-title">RANDOM USER GENERATOR</h1>
+      <h5 class="banner-description">
+        A free engin to generate random user data. Like Lorem Ipsum, but for
+        people.
+        <br />
+        Use the bottom below to generate a random user.
+        <br />
+        <span class="text-danger">
+          Note: We are not responsible for any abuse or bad using of this engine
+        </span>
+      </h5>
+      <button id="btn" class="btn generate-btn btn-success">
+        👨 GENERATE 🙎
+      </button>
     </main>
+    <div id="root"></div>
 
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-black pt-4">
+      <!-- Footer Links -->
+      <div class="container-fluid text-center text-md-left">
+        <!-- Grid row -->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-6 mt-md-0 mt-3">
+            <!-- Content -->
+            <h5 class="text-uppercase logo-font">RANDOM USER GENERATOR</h5>
+            <p>
+              All randomly generated photos were hand picked from the authorized section of UI Faces. Please visit UI Faces FAQ for more information regarding how you can use these faces.
+            </p>
+          </div>
+          <!-- Grid column -->
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
+          <hr class="clearfix w-100 d-md-none pb-3" />
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">More Websites</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">Link 1</a>
+              </li>
+              <li>
+                <a href="#!">Link 2</a>
+              </li>
+              <li>
+                <a href="#!">Link 3</a>
+              </li>
+              <li>
+                <a href="#!">Link 4</a>
+              </li>
+            </ul>
           </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a short card.</p>
-            </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-3 mb-md-0 mb-3">
+            <!-- Links -->
+            <h5 class="text-uppercase">Have Questions?</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!">facebook</a>
+              </li>
+              <li>
+                <a href="#!">twitter</a>
+              </li>
+              <li>
+                <a href="#!">Github</a>
+              </li>
+            </ul>
           </div>
+          <!-- Grid column -->
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-          </div>
-        </div>
+        <!-- Grid row -->
       </div>
+      <!-- Footer Links -->
 
-    <div id="root">
-    </div>
-
-
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">
+        © 2023 Copyright:
+        <a href="#">
+          example.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
 
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

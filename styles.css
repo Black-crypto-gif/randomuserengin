@@ -18,7 +18,7 @@ body{
     color: var(--main-text-color);
     position: relative;
 }
-#logo-font{
+.logo-font{
     font-family: 'Dancing Script', cursive;
 }
 
@@ -54,12 +54,21 @@ body{
     flex-direction: column;
     text-align: center;
     gap: 1.5rem;
+    width: 100%;
 }
 .banner-title{
     font-size: 3.5rem;
+    font-family: 'Dancing Script', cursive;
+    margin: 1.5rem;
+    width: auto;
 }
 .banner-description{
-    font-size: 2rem;
+    line-height: 1.5;
+    margin-left: 4rem ;
+    margin-right: 4rem ;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
 }
 .generate-btn{
     align-self: center;
