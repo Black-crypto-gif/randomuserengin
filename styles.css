@@ -173,4 +173,8 @@ a{
     border-radius: 5px;
     padding: 0.5rem;
 }
-
+@media screen and (max-width="765px"){
+    .generate-btn{
+        width: auto;
+    }
+}
